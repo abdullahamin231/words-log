@@ -10,11 +10,12 @@ words.log() is a simple vocabulary manager that allows users to add words and sa
 ## Usage
 This project is hosted on **GitHub Pages**. You can access it at:
 **[abdullahamin231.github.io/words-log](https://abdullahamin231.github.io/words-log/)**
-(Replace `your-github-username` with your actual GitHub username.)
+
+## Todo
+- [ ] Sort words.
+- [ ] Cloud storage (persist across devices).
+- [ ] Chrome extension to add words on the fly.
 
 ## Contributing
 Contributions are welcome. If you would like to suggest a new feature or improvement, feel free to open an issue or submit a pull request.
-
-## License
-This project is open-source and available for modification and redistribution.
 
