@@ -45,8 +45,8 @@ export default function Page() {
     }
 
     if (wordsStore.addNewWord(trimmedWord, trimmedDefinitions)) {
-      setWords([
-        ...words,
+      setWords((prevWords) => [
+        ...prevWords,
         {
           id: hashIt(trimmedWord),
           word: trimmedWord,

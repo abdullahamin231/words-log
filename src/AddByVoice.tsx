@@ -53,9 +53,9 @@ export default function AddByVoice({
         const wordData = data[0];
         const meanings = wordData["meanings"];
         const tempDefinitions: string[] = [];
-        for (let i = 0; i < meanings.length; ++i) {
+        for (let i = 0; i < Math.min(1, meanings.length); ++i) {
           const definitions = meanings[i]["definitions"];
-          for (let j = 0; j < definitions.length; ++j) {
+          for (let j = 0; j < Math.min(2, definitions.length); ++j) {
             tempDefinitions.push(definitions[j]["definition"]);
           }
         }
