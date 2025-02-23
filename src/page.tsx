@@ -158,6 +158,7 @@ export default function Page() {
                                       let newDefs = [
                                         ...editingWord.definitions,
                                       ];
+                                      def;
                                       newDefs = newDefs.filter(
                                         (def) => def.length > 0,
                                       );

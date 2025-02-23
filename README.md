@@ -15,8 +15,8 @@ This project is hosted on **GitHub Pages**. You can access it at:
 
 ## Todo (listed priority-wise H->L)
 
-- [X] Bulk input through STT (speech-to-text)
- - [X] Fetch definition automatically.
+- [x] Bulk input through STT (speech-to-text)
+- [x] Fetch definition automatically.
 - [ ] Spell checking.
 - [ ] Push notifications to show usage sentences.
 - [ ] Anki flashcard like feature.

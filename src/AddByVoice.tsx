@@ -10,7 +10,6 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@radix-ui/react-label";
 import { TrashIcon, PencilIcon } from "lucide-react";
 import { useState, useRef } from "react";
 import { toast } from "sonner";
@@ -128,13 +127,6 @@ export default function AddByVoice({
   const clearTranscript = () => {
     setTranscript("");
     setFinalTranscript(new Set());
-  };
-
-  const stopRecording = () => {
-    if (recognitionRef.current) {
-      recognitionRef.current.stop();
-      setRecordingState("end");
-    }
   };
 
   return (
