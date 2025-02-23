@@ -1,10 +1,11 @@
+import hashIt from "./Hashing";
+
 const STORAGE_KEY = "words-log-data";
 
 export interface Word {
   id: string;
   word: string;
-  definition: string;
-  sentences?: string[];
+  definitions: string[];
 }
 
 export default class WordStore {
@@ -28,8 +29,7 @@ export default class WordStore {
       this.words.set(newWord.id, {
         id: newWord.id,
         word: newWord.word,
-        definition: newWord.definition,
-        sentences: newWord.sentences,
+        definitions: newWord.definitions,
       });
     }
   }
@@ -38,14 +38,23 @@ export default class WordStore {
     return Array.from(this.words.values());
   }
 
-  public addWord(
-    id: string,
-    word: string,
-    definition: string,
-    sentences: string[] = [],
-  ): boolean {
+  public appendDefinition(word: string, altDefinition: string): boolean {
+    const id = hashIt(word);
+    if (!this.words.has(id)) return false;
+
+    const currentWord = this.words.get(id);
+    if (!currentWord) return false;
+
+    currentWord.definitions.push(altDefinition);
+    this.words.set(id, currentWord);
+    this.saveWords();
+    return true;
+  }
+
+  public addNewWord(word: string, definitions: string[]): boolean {
+    const id = hashIt(word);
     if (this.words.has(id)) return false;
-    this.words.set(id, { id, word, definition, sentences });
+    this.words.set(id, { id, word, definitions });
     this.saveWords();
     return true;
   }
