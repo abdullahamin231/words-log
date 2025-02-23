@@ -11,8 +11,11 @@ words.log() is a simple vocabulary manager that allows users to add words and sa
 This project is hosted on **GitHub Pages**. You can access it at:
 **[abdullahamin231.github.io/words-log](https://abdullahamin231.github.io/words-log/)**
 
-## Todo
-- [ ] Sort words.
+## Todo (listed priority-wise H->L)
+- [ ] Bulk input through STT (speech-to-text)
+ - [ ] Spell checking.
+ - [ ] Fetch definition automatically.
+- [ ] Push notifications to show usage sentences.
 - [ ] Anki flashcard like feature.
 - [ ] Cloud storage (persist across devices).
 - [ ] Chrome extension to add words on the fly.
