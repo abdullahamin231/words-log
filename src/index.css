@@ -3,25 +3,25 @@
 @plugin "tailwindcss-animate";
 
 * {
-	font-family: "Inter";
+  font-family: "Inter";
 }
 
 /* Custom Tailwind Scrollbar */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #09090B; /* Dark background */
+  background: #09090b; /* Dark background */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #27272A; /* Tailwind purple-800 */
-    border-radius: 3px;
+  background: #27272a; /* Tailwind purple-800 */
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #27272A; /* Tailwind purple-900 on hover */
+  background: #27272a; /* Tailwind purple-900 on hover */
 }
 
 @custom-variant dark (&:is(.dark *));
