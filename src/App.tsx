@@ -5,7 +5,7 @@ import Page from "./page";
 function App() {
   return (
     <>
-      <Toaster position="top-right" theme="dark" duration={2000} />
+      <Toaster position="top-right" theme="dark" duration={4000} />
       <Page />
       <Footer />
     </>
