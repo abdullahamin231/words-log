@@ -13,6 +13,7 @@ This project is hosted on **GitHub Pages**. You can access it at:
 
 ## Todo
 - [ ] Sort words.
+- [ ] Anki flashcard like feature.
 - [ ] Cloud storage (persist across devices).
 - [ ] Chrome extension to add words on the fly.
 
