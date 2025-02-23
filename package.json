@@ -50,7 +50,6 @@
     "vite": "^6.1.0"
   },
   "pnpm": {
-    "onlyBuiltDependencies": [
-    ]
+    "onlyBuiltDependencies": []
   }
 }
