@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Github } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -20,6 +20,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
