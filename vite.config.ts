@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-	base: "/words-log/",
 	plugins: [react(), tailwindcss()],
 	resolve: {
 		alias: {
